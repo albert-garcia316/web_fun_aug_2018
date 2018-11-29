@@ -1,0 +1,136 @@
+* {
+    margin: 0px;
+}
+#wrap {
+    width: auto;
+    height: auto;
+    margin: 20px;
+}
+#wrapper{
+height: auto;
+width: 680px;
+background: radial-gradient(lightgray, rgb(46, 4, 29))
+}
+h1 {
+    display: inline-block;
+}
+#header h3 {
+    display: inline-block;
+    margin-left: 220px;
+}
+#header {
+    background-color: white;
+    width: 680px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.profilepic {
+height: 200px;
+width: 300px;
+border: 5px solid lightgray;
+margin-left: 20px;
+display: inline-block;
+}
+#aboutme {
+    display: inline-block;
+    height: 210px;
+    width: 300px;
+    background-color: lightgrey;
+    vertical-align: top;
+    margin-left: 20px;
+}
+h2 {
+    color: white;
+    margin-left: 10px;
+    
+}
+.boxheader {
+    background: linear-gradient(darkgrey, lightgray);
+    height: 30px;
+    margin-bottom: 10px;
+}
+#aboutme p {
+    margin-bottom: 15px;
+}
+.columns {
+display: inline-block;
+height: 450px;
+width: 195px;
+margin-left: 20px;
+background-color: lightgrey;
+margin-top: 20px;
+vertical-align: top;
+}
+.columns .pic {
+    width: 195px;
+    height: 120px;
+}
+.columns p {
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 12px;
+    height: 120px;
+}
+.techbox {
+    background: linear-gradient(darkgrey, lightgray);
+    height: 30px;
+    margin-top: 10px;
+    vertical-align: top;
+}
+.techbox h3 {
+    color: white;
+    margin-left: 10px;
+}
+.techs {
+    height: 30px;
+    width: 30px;
+    margin-left: 4px;
+    margin-bottom: 8px;
+}
+#button1 {
+    width: 75px;
+    background-color: green;
+    text-align: center;
+    border-radius: 7px;
+    margin-left: 60px;
+    }
+#button2 {
+    width: 120px;
+    background-color: green;
+    text-align: center;
+    border-radius: 7px;
+    margin-left: 40px;
+}
+#button3 {
+    width: 75px;
+    background-color: green;
+    text-align: center;
+    border-radius: 7px;
+    margin-left: 55px;
+}
+a {
+    text-decoration: none;
+}
+h4 {
+    color: white;
+}
+#footer {
+    background-color: white;
+    height: 40px;
+    margin-top: 20px;
+    padding-top: 2px;
+    text-align: center;
+}
+#email {
+    margin-bottom: 5px;
+}
+.link {
+    display: inline;
+    text-decoration: underline;
+    margin-left: 2px;
+}
+.footer {
+    height: 15px;
+    width: 15px;
+}

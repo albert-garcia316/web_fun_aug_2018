@@ -1,0 +1,10 @@
+pwd
+cd
+..
+ls, ls -a, ls -l
+mkdir
+rm, rm -rf
+cp
+sudo
+touch
+cat

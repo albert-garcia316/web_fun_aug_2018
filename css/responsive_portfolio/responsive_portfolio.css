@@ -1,0 +1,390 @@
+* {
+    margin: 0px;
+}
+#wrap {
+    width: auto;
+    height: auto;
+    margin: 20px;
+}
+#wrapper{
+height: auto;
+width: 100%;
+background: radial-gradient(lightgray, rgb(46, 4, 29));
+padding: 10px;
+}
+h1 {
+    display: inline-block;
+}
+#header {
+    background-color: white;
+    width: 680px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+h2 {
+    color: white;
+    margin-left: 10px;
+    
+}
+.boxheader {
+    background: linear-gradient(darkgrey, lightgray);
+    height: 30px;
+    margin-bottom: 10px;
+}
+.techbox {
+    background: linear-gradient(darkgrey, lightgray);
+    height: 30px;
+    margin-top: 10px;
+    vertical-align: top;
+}
+.techbox h3 {
+    color: white;
+    margin-left: 10px;
+}
+.techs {
+    height: 30px;
+    width: 30px;
+    margin-left: 4px;
+    margin-bottom: 8px;
+}
+a {
+    text-decoration: none;
+}
+h4 {
+    color: white;
+}
+#email {
+    margin-bottom: 5px;
+}
+.link {
+    display: inline;
+    text-decoration: underline;
+    margin-left: 2px;
+}
+.footer {
+    height: 15px;
+    width: 15px;
+}
+@media only screen and (max-width:480px){
+    #wrapper {
+        text-align: center;
+    }
+    #header {
+        background-color: white;
+        width: 97%;
+        height: auto;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    #header h3 {
+        display: none;
+    }
+    .boxheader {
+        font-size: 20px;
+    }
+    #profilepic {
+        height: auto;
+        width: 95%;
+        border: 5px solid lightgray;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    #aboutme {
+        display: inline-block;
+        height: auto;
+        width: 97%;
+        background-color: lightgrey;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    #aboutme p {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    .columns {
+        display: inline-block;
+        height: auto;
+        width: 95%;
+        background-color: lightgrey;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .columns .pic {
+        width: 90%;
+        height: auto;
+    }
+    .columns p {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    button {
+        background-color: green;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        color: white;
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .techbox {
+        display: none;
+    }  
+    #footer {
+        background-color: white;
+        height: auto;
+        width: 95%;
+        padding-top: 2px;
+        text-align: center;
+        display: inline-block;
+    }
+    #email {
+        display: none;
+    }
+    .link {
+        display: none;
+    }
+    .footer {
+        height: 30px;
+        width: 30px;
+        margin-right: 20px;
+    }
+}
+@media only screen and (min-width:481px){
+    #wrapper {
+        text-align: center;
+    }
+    #header {
+        background-color: white;
+        width: 97%;
+        height: auto;
+        margin-bottom: 20px;
+        display: inline-block;
+        text-align: left;
+        position: relative;
+    }
+    h1 {
+        font-size: 36px;
+        margin-left: 20px;
+        margin-right: 47%;
+    }
+    #header h3 {
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        font-size: 24px;
+    }
+    .boxheader {
+        font-size: 20px;
+    }
+    #profilepic {
+        height: 250px;
+        width: 47%;
+        border: 5px solid lightgray;
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    #aboutme {
+        display: inline-block;
+        height: 250px;
+        width: 47%;
+        background-color: lightgrey;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        vertical-align: top;
+    }
+    #aboutme p {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    .columns {
+        display: inline-block;
+        height: 550px;
+        width: 30%;
+        background-color: lightgrey;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-right: 10px;
+        vertical-align: top;
+    }
+    .columns .pic {
+        width: 90%;
+        height: auto;
+    }
+    .columns p {
+        margin-top: 10px;
+        font-size: 18px;
+        height: 150px;
+        margin-bottom: 40px;
+
+    }
+    button {
+        background-color: green;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        color: white;
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .techbox {
+        display: inline-block;
+        margin-top: 20px;
+        height: 120px;
+    }  
+    .techbox h3 {
+        margin-bottom: 10px;
+    }
+    #footer {
+        background-color: white;
+        height: auto;
+        width: 97%;
+        padding-top: 2px;
+        text-align: center;
+        display: inline-block;
+    }
+    #email {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .link {
+        display: inline-block;
+        font-size: 16px;
+        vertical-align: top;
+        margin-right: 20px;
+    }
+    .footer {
+        height: 30px;
+        width: 30px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+}
+@media only screen and (min-width:1024px){
+    #wrapper {
+        text-align: center;
+    }
+    #header {
+        background-color: white;
+        width: 97%;
+        height: auto;
+        margin-bottom: 20px;
+        display: inline-block;
+        text-align: left;
+        position: relative;
+    }
+    h1 {
+        font-size: 36px;
+        margin-left: 20px;
+        margin-right: 47%;
+    }
+    #header h3 {
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        font-size: 24px;
+    }
+    .boxheader {
+        font-size: 20px;
+    }
+    #profilepic {
+        height: 300px;
+        width: 47%;
+        border: 5px solid lightgray;
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    #aboutme {
+        display: inline-block;
+        height: 300px;
+        width: 47%;
+        background-color: lightgrey;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        vertical-align: top;
+    }
+    #aboutme p {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    .columns {
+        display: inline-block;
+        height: 550px;
+        width: 31%;
+        background-color: lightgrey;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-right: 10px;
+    }
+    .columns .pic {
+        width: 90%;
+        height: auto;
+    }
+    .columns p {
+        margin-top: 10px;
+        font-size: 18px;
+        margin-bottom: 1px;
+        height: 100px;
+    }
+    button {
+        background-color: green;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        color: white;
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .techbox {
+        display: inline-block;
+        width: 90%;
+        height: 120px;
+    }  
+    .techbox h3 {
+        margin-bottom: 10px;
+    }
+    #footer {
+        background-color: white;
+        height: auto;
+        width: 97%;
+        padding-top: 2px;
+        text-align: center;
+        display: inline-block;
+    }
+    #email {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .link {
+        display: inline-block;
+        font-size: 16px;
+        vertical-align: top;
+        margin-right: 20px;
+    }
+    .footer {
+        height: 30px;
+        width: 30px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+}

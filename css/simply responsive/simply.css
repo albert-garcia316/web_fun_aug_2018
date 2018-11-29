@@ -1,0 +1,52 @@
+#wrap {
+    width: 100%;
+    margin: 10px;
+    justify-content: center;
+}
+p {
+    width: 90%;
+    background-color: grey;
+}
+h1 {
+    width: 90%;
+    background-color: grey;
+}
+span {
+    font-weight: bold;
+}
+.sm, .md, .lg {
+    background-color: lightgoldenrodyellow;
+}
+@media only screen and (max-width:480px){
+    .sm {
+        width: 90%;
+    }
+    .md {
+        display: none;
+    }
+    .lg {
+        display: none;
+    }
+}
+@media only screen and (min-width:481px){
+    .sm {
+        display: none;
+    }
+    .lg {
+        display: none;
+    }
+    .md {
+        width: 90%;
+}
+@media only screen and (min-width:900px){
+    .lg {
+        width: 90%;
+        display: block;
+    }
+    .sm {
+        display: none;
+    }
+    .md {
+        display: none;
+    }
+}

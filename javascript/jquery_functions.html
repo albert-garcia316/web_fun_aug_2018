@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery Functions</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>    
+    <script>
+        $(document).ready(function() {        
+            $('#hide .b2p').hide();
+            $('#hide .b2').click( function() { $('#hide .b2p').show(); } );
+            $('#hide .b1').click( function() { $('#hide .b1p').hide(); } );
+            $('#hide .b3').click( function() { $('#hide .b3p').toggle(); } );
+            $('#slide .b1').click( function() { 
+                if ( $( "#slide .b1p" ).is( ":hidden" ) ) {
+                $( "#slide .b1p" ).slideDown( "slow" );
+                } else {
+                $( "#slide .b1p" ).hide();
+                }
+            });
+            $('#slide .b2').click( function() { 
+                if ( $( "#slide .b2p" ).is( ":hidden" ) ) {
+                $( "#slide .b2p" ).show( "slow" );
+                } else {
+                $( "#slide .b2p" ).slideUp();
+                }
+            });
+            $('#slide .b3').click( function() { $('#slide .b3p').slideToggle("slow")});
+            $('#fade .b1').click( function() { 
+                if ( $( "#fade .b1p" ).is( ":hidden" ) ) {
+                $( "#fade .b1p" ).fadeIn( "slow" );
+                } else {
+                $( "#fade .b1p" ).hide();
+                }
+            });
+            $('#fade .b2').click( function() { 
+                if ( $( "#fade .b2p" ).is( ":hidden" ) ) {
+                $( "#fade .b2p" ).show( "slow" );
+                } else {
+                $( "#fade .b2p" ).fadeOut();
+                }
+            });
+            var classCounter = 0;
+            $('#add .b1').click( function() { 
+                classCounter++;
+                console.log(classCounter);
+                if (classCounter % 2 !== 0){
+                    $(this).addClass("btn-success");
+                }
+                else {
+                    $(this).removeClass("btn-success");
+                }
+            });
+            $('#before .b1').click( function() { $('#before .b1').before("This is before!"); } );
+            $('#before .b2').click( function() { $('#before .b2').after("This is After!"); } );
+            $('#append .b1').click( function() { $('#append .b1').append("After!"); } );
+            $('#append .b2').click( function() { $('#append .b2').prepend("Before!"); } );
+            $('#html .b1').click( function() { $('#html .b1p').html("<b>I am bold!</b>"); } );
+            $('#html .b2').click( function() { $('#html .b1p').text("Hello Coding Dojo Ninjas!"); } );
+            $('#attribute .b1').click( function() { 
+                var temp = $('#check1').attr("checked"); 
+                $('#attr').text(temp);
+                } );
+                $('#value .b1').click( function() { $('#textbox').val("Hello Coding Dojo Ninjas!"); } );
+        });
+    </script>
+</head>
+<body>
+    <div class="container bg-secondary p-5">
+        <div id="hide" class="row mb-5 pb-3">
+            <h2 class="mr-3">Hide/Show/Toggle</h2>
+            <button type="button" class="b1 btn btn-primary mr-3 p-2">Click Me!</button>
+            <p class="b1p mr-2">This will hide this text</p>
+            <button type="button" class="b2 btn btn-primary mr-3 p-2">Click to show!</button>
+            <p class="b2p mr-2">Hello World</p>
+            <button type="button" class="b3 btn btn-primary mr-3 p-2">Click Me!</button>
+            <p class="b3p mr-2">This will toggle this text</p>
+        </div>
+
+        <div id="slide" class="row mb-5">
+                <h2 class="mr-3">Slide (Down/Up/Toggle)</h2>
+                <button type="button" class="b1 btn btn-primary mr-3 p-2">Slide down!</button>
+                <ul class="b1p mr-4">
+                    <li>Coding</li>
+                    <li>Dojo</li>
+                    <li>Rocks!</li>
+                </ul>
+                <button type="button" class="b2 btn btn-primary mr-3 p-2">Click to slide!</button>
+                <ul class="b2p mr-4">
+                        <li>Coding</li>
+                        <li>Dojo</li>
+                        <li>Rocks!</li>
+                    </ul>
+                <button type="button" class="b3 btn btn-primary mr-3 p-2">Click Me!</button>
+                <p class="b3p mr-2">This will toggle this text</p>
+            </div>
+
+            <div id="fade" class="row mb-5">
+                <h2 class="mr-3">Fade (In/Out)</h2>
+                <button type="button" class="b1 btn btn-primary mr-3 p-2">Click Me!</button>
+                <ul class="b1p mr-4">
+                    <li>Coding</li>
+                    <li>Dojo</li>
+                    <li>Rocks!</li>
+                </ul>
+                <button type="button" class="b2 btn btn-primary mr-3 p-2">Click to Fade!</button>
+                <ul class="b2p mr-4">
+                    <li>Coding</li>
+                    <li>Dojo</li>
+                    <li>Rocks!</li>
+                </ul>
+            </div>
+
+            <div id="add" class="row mb-5">
+                <h2 class="mr-3">Add/Remove Class</h2>
+                <button type="submit" class="b1 btn btn-primary mr-3 p-2">Click Me!</button>
+                <p class="b1p mr-2">This button changes the button's class. As a result changing it's color!</p>
+            </div>
+
+            <div id="before" class="row mb-5">
+                <h2 class="mr-3">Before/After</h2>
+                <button type="submit" class="b1 btn btn-primary mr-3 p-2">Click Me!</button>
+                <p class="b1p mr-2">This button adds content before the button!</p>
+                <button type="submit" class="b2 btn btn-primary mr-3 p-2">Click Me!</button>
+                <p class="b2p mr-2">This button adds content after the button!</p>
+            </div>
+
+            <div id="append" class="row mb-5">
+                <h2 class="mr-3">Append/Prepend</h2>
+                <button type="submit" class="b1 btn btn-primary mr-3 p-2">Click Me!</button>
+                <p class="b1p mr-2 w-25">This button adds content after "click Me!" inside the button!</p>
+                <button type="submit" class="b2 btn btn-primary mr-3 p-2">Click Me!</button>
+                <p class="b2p mr-2 w-25">This button adds content before "click Me!" inside the button!</p>
+            </div>
+
+            <div id="html" class="row mb-5">
+                <h2 class="mr-3">.HTML/.Text</h2>
+                <button type="submit" class="b1 btn btn-primary mr-3 p-2">Click Me!</button>
+                <p class="b1p mr-2 w-25">Left button gives this paragragh a new tag, Right button changes this to be a greeting!</p>
+                <button type="submit" class="b2 btn btn-primary mr-3 p-2">Click Me!</button>
+            </div>
+
+            <div id="attribute" class="row mb-5">
+                <h2 class="mr-3">Attribute</h2>    
+                <button type="button" class="b1 btn btn-primary m-3 p-3">Click Me!</button>
+                <p id="attr" class="w-25"></p>
+                <p class="col-4">This will return the value of the checkbox</p>
+                <input id="check1" type="checkbox" title="checkbox" checked="checked" class="mr-2">
+                <label for="check1">Check Me!</label>
+            </div>
+
+            <div id="value" class="row mb-5">
+                <h2 class="mr-3">Value</h2>    
+                <button type="button" class="b1 btn btn-primary m-3 p-3">Click Me!</button>
+                <p id="attr" class="w-25"></p>
+                <p class="col-4">This will change the value of the textbox</p>
+                <input id="textbox" type="textarea" title="checkbox" class="mr-2" value="I'm a textbox">
+            </div>
+                                                                           
+</body>
+</html>
